@@ -1,32 +1,12 @@
-.badge {
+.badge {   
     background-color: tomato;
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-weight: 600;
-  }
-.small_badge {
-    background-color: tomato;
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
-    position: absolute;
-    left: 30px;
-    bottom: 25px;
-  }
-  .settings_badge_parent {
-    position: relative;
-  }
-  .settings_badge {
-    background-color: tomato;
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
-    position: absolute;
-    left: -5px;
-    bottom: 20px;
-  }  
+    color:white;
+    font-weight:600;
+}    
+

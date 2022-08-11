@@ -1,58 +1,83 @@
-.user-component {
+.user-component{
     justify-content: space-between;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    padding: 10px 5px;
-  }
-  
-  .user-component,
-  .user-component__column:first-child {
-    display: flex;
+}
+.user-component,
+.user-component__column:first-child{
+    display:flex;
     align-items: center;
-  }
-  
-  .user-component__avatar {
+}
+@keyframes imgHover{
+    from{
+        transform:none;
+    }
+    to{
+        transform:translateX(25vw) translateY(15vh) scale(5);
+        z-index: 10;
+    }
+}
+.user-component__column img{
+    z-index: 1;
+}
+.user-component__column img:hover{
+    will-change: transform;
+    animation: imgHover 2s ease-in-out forwards;
+}
+.user-component__avatar{
     width: 70px;
     height: 70px;
-    border-radius: 30px;
+    border-radius: 27px;
     margin-right: 20px;
-  }
-  
-  .user-component__title {
+}
+.user-component__title{
     font-weight: 600;
     font-size: 22px;
-  }
-  
-  .user-component__subtitle {
+}
+.user-component__subtitle{
     margin-top: 8px;
     font-size: 17px;
     color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .user-component__avatar--xl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.user-component__subtitle--warning{
+    margin-left: 8px;
+    font-size:14px;
+    width:14px;
+    height:14px;
+    border-style: solid;
+    border-color: red;
+    border-width:1px;
+    border-radius: 50%;
+    text-align: center;
+    position:absolute;
+    right:-20px;
+    bottom:-0.8px;
+    color:red
+}
+.user-component__avatar--xl{
     width: 80px;
     height: 80px;
-  }
-  
-  .user-component__avatar--sm {
+}
+.user-component__avatar--sm{
     width: 60px;
     height: 60px;
     border-radius: 25px;
-  }
-  
-  .user-component__title--not-bold {
+}
+.user-component__title--not-bold{
     font-weight: 400;
-  }
-  
-  .user-component__column:last-child {
+    font-size: 22px;
+}
+
+.user-component__column:last-child{
     color: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
-  
-  .user-component__time {
-    margin-bottom: 10px;
-    display: block;
-  }
-  
+}
+.user-component__time {
+    margin-bottom:10px;
+    display:block;
+}
+
